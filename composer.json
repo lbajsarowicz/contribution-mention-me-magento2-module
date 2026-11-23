@@ -2,7 +2,11 @@
     "name": "mention-me/magento2-module",
     "description": "MentionMe Magento2 Module",
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true
+        }
     },
     "require": {
     },
@@ -18,5 +22,11 @@
         "psr-4": {
             "MentionMe\\MentionMe\\": "app/code/MentionMe/MentionMe/"
         }
+    },
+    "require-dev": {
+        "bitexpert/phpstan-magento": "^0.44",
+        "magento/magento-coding-standard": "^41",
+        "phpstan/extension-installer": "^1.4",
+        "phpstan/phpstan": "^2.1"
     }
 }
